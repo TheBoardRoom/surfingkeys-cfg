@@ -13,7 +13,7 @@ removeSearchAliasX('w', 's'); // baidu
 // ----- Weblio ----------------------------------------------------------------
 addSearchAliasX('wb',
                 'Weblio',
-                'https://ejje.weblio.jp/turbo/'
+                'https://ejje.weblio.jp/turbo/',
                 's'
                 );
 mapkey('owb',
