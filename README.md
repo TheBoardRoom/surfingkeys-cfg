@@ -1,2 +1,3 @@
 # surfingkeys-cfg
-Configuration for Surfingkeys
+
+A simple config file for surfingkeys, mostly to incorporate new search engines and mnemonic shorcuts to usefull tools. 
