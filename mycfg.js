@@ -57,6 +57,11 @@ addSearchAliasX('G',
                     var res = JSON.parse(response.text);
                  return res[1];
                  });
+mapkey('oG',
+       '#8Open search with Google',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"G"});
+       });
 // ----- Google mail -----------------------------------------------------------
 // Add Google mail to search engine under alias gmm
 addSearchAliasX('gmm',
