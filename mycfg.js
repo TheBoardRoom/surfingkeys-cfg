@@ -18,7 +18,7 @@ removeSearchAliasX('g', 'google', 'https://www.google.com/search?q=', 's', 'http
     return res[1];
 });
 // Reimplement them with other os
-addSearchAliasx('G',
+addSearchAliasX('G',
                 'google',
                 'https://www.google.com/search?q=',
                 's',
