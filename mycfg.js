@@ -10,6 +10,17 @@ removeSearchAliasX('w', 's'); // baidu
 
 // Search engine
 // ##### Other #################################################################
+// ----- Weblio ----------------------------------------------------------------
+addSearchAliasX('wb',
+                'Weblio',
+                'https://ejje.weblio.jp/turbo/'
+                's',
+                );
+mapkey('owb',
+       '#8Open search with Weblio',
+       function() {
+          Front.openOmnibar({type: "SearchEngine", extra:"wb"});
+       });
 // ----- Jisho -----------------------------------------------------------------
 addSearchAliasX('j',
                 'jisho',
