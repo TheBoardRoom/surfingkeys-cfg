@@ -10,6 +10,17 @@ removeSearchAliasX('w', 's'); // baidu
 
 // Search engine
 // ##### Other #################################################################
+// ----- Jisho -----------------------------------------------------------------
+addSearchAliasX('j',
+                'jisho',
+                'https://jisho.org/search/',
+                's',
+                );
+mapkey('oj',
+       '#8Open search with Jisho',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"j"});
+       });
 // ----- Wikipedia -------------------------------------------------------------
 addSearchAliasX('wk',
                 'wikipedia',
