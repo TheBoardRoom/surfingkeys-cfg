@@ -13,11 +13,30 @@ unmap('sg');
 unmap('ow');
 
 // Remove search alias for google and bing
-removeSearchAliasX('g', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
-    var res = JSON.parse(response.text);
-    return res[1];
-});
-// Reimplement them with other os
+removeSearchAliasX('g', 's'); // google
+removeSearchAliasX('w', 's'); // bing
+removeSearchAliasX('e', 's'); // wiki
+removeSearchAliasX('w', 's'); // baidu
+
+
+// Search engine
+// ##### Other #################################################################
+// ----- Wikipedia -------------------------------------------------------------
+addSearchAliasX('wk',
+                'wikipedia',
+                'https://en.wikipedia.org/wiki/',
+                's',
+                'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&formatversion=2&namespace=0&limit=40&search=',
+                function(response) {
+                    return JSON.parse(response.text)[1];
+                });
+mapkey('owk',
+       '#8Open search with Wikipedia EN',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"wk"});
+       });
+// ##### Google ################################################################
+// ----- Google ----------------------------------------------------------------
 addSearchAliasX('G',
                 'google',
                 'https://www.google.com/search?q=',
@@ -27,21 +46,6 @@ addSearchAliasX('G',
                     var res = JSON.parse(response.text);
                  return res[1];
                  });
-                
-
-// Search engine
-// ##### Other #################################################################
-// ----- Wikipedia -------------------------------------------------------------
-addSearchAliasX('wk',
-                'Wikipedia',
-                'https://en.wikipedia.org/wiki/Special:Search?search='
-                );
-mapkey('owk',
-       '#8Open search with Wikipedia EN',
-       function() {
-           Front.openOmnibar({type: "SearchEngine", extra:"wk"});
-       });
-// ##### Google ################################################################
 // ----- Google mail -----------------------------------------------------------
 // Add Google mail to search engine under alias gmm
 addSearchAliasX('gmm',
