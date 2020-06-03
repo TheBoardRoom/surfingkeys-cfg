@@ -23,7 +23,7 @@ mapkey('owb',
        });
 // ----- Jisho -----------------------------------------------------------------
 addSearchAliasX('j',
-                'jisho',
+                'Jisho',
                 'https://jisho.org/search/',
                 's'
                 );
@@ -34,7 +34,7 @@ mapkey('oj',
        });
 // ----- Wikipedia -------------------------------------------------------------
 addSearchAliasX('wk',
-                'wikipedia',
+                'Wikipedia',
                 'https://en.wikipedia.org/wiki/',
                 's',
                 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&formatversion=2&namespace=0&limit=40&search=',
@@ -49,7 +49,7 @@ mapkey('owk',
 // ##### Google ################################################################
 // ----- Google ----------------------------------------------------------------
 addSearchAliasX('G',
-                'google',
+                'Google',
                 'https://www.google.com/search?q=',
                 's',
                 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=',
@@ -89,7 +89,7 @@ addSearchAliasX('tje',
                 'Google translate JP/EN',
                 'https://translate.google.com/#view=home&op=translate&sl=ja&tl=en&text='
                 );
-mapkey('ogtje',
+mapkey('otje',
        '#8Open search with Google translate JP/EN',
        function() {
            Front.openOmnibar({type: "SearchEngine", extra:"tje"});
@@ -99,7 +99,7 @@ addSearchAliasX('tej',
                 'Google translate EN/JP',
                 'https://translate.google.com/#view=home&op=translate&sl=en&tl=ja&text='
                 );
-mapkey('ogtej',
+mapkey('otej',
        '#8Open search with Google translate EN/JP',
        function() {
            Front.openOmnibar({type: "SearchEngine", extra:"tej"});
@@ -109,7 +109,7 @@ addSearchAliasX('tde',
                 'Google translate DE/EN',
                 'https://translate.google.com/#view=home&op=translate&sl=de&tl=en&text='
                 );
-mapkey('ogtde',
+mapkey('otde',
        '#8Open search with Google translate DE/EN',
        function() {
            Front.openOmnibar({type: "SearchEngine", extra:"tde"});
@@ -119,7 +119,7 @@ addSearchAliasX('ted',
                 'Google translate EN/DE',
                 'https://translate.google.com/#view=home&op=translate&sl=de&tl=en&text='
                 );
-mapkey('ogted',
+mapkey('oted',
        '#8Open search with Google translate EN/DE',
        function() {
            Front.openOmnibar({type: "SearchEngine", extra:"ted"});
