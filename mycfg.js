@@ -10,6 +10,18 @@ removeSearchAliasX('w', 's'); // baidu
 
 // Search engine
 // ##### Other #################################################################
+// ***** Dictionary ************************************************************
+// ----- Kotobank --------------------------------------------------------------
+addSearchAliasX('k',
+                'Kotobank',
+                'https://kotobank.jp/word/',
+                's'
+                );
+mapkey('ok',
+       '#8Open search with Kotobank',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"wb"});
+       });
 // ----- Weblio ----------------------------------------------------------------
 addSearchAliasX('wb',
                 'Weblio',
@@ -32,6 +44,7 @@ mapkey('oj',
        function() {
            Front.openOmnibar({type: "SearchEngine", extra:"j"});
        });
+// ***** Other *****************************************************************
 // ----- Wikipedia -------------------------------------------------------------
 addSearchAliasX('wk',
                 'Wikipedia',
@@ -163,4 +176,4 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-// click `Save` button to make above settings to take effect.
+// click `Save` button to make above settings to take effect.G
