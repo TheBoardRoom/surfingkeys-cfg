@@ -2,10 +2,15 @@
 // unmap('<Ctrl-i>');
 
 // Remove search alias for google and bing
-removeSearchAliasX('g', 's'); // google
-removeSearchAliasX('w', 's'); // bing
-removeSearchAliasX('e', 's'); // wiki
-removeSearchAliasX('w', 's'); // baidu
+unmap('og');
+unmap('ow');
+unmap('oe');
+unmap('ob');
+unmap('oi');
+removeSearchAliasX('g'); // google
+removeSearchAliasX('w'); // bing
+removeSearchAliasX('e'); // wiki
+removeSearchAliasX('b'); // baidu
 
 
 // Search engine
@@ -45,6 +50,19 @@ mapkey('oj',
            Front.openOmnibar({type: "SearchEngine", extra:"j"});
        });
 // ***** Other *****************************************************************
+// ----- IMDB ------------------------------------------------------------------
+addSearchAliasX('i',
+                'IMDB',
+                'https://www.imdb.com/find?q=',
+                's'
+//'https://v2.sg.media-imdb.com/suggests/h/hello.json'
+//'https://sg.media-imdb.com/suggests/a/aa.json'
+                );
+mapkey('oi',
+       '#8Open search with IMDB',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra: "i"});
+       });
 // ----- Wikipedia -------------------------------------------------------------
 addSearchAliasX('wk',
                 'Wikipedia',
@@ -176,4 +194,4 @@ settings.theme = `
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-// click `Save` button to make above settings to take effect.G
+// click `Save` button to make above settings to take effect.
