@@ -25,7 +25,7 @@ addSearchAliasX('k',
 mapkey('ok',
        '#8Open search with Kotobank',
        function() {
-           Front.openOmnibar({type: "SearchEngine", extra:"wb"});
+           Front.openOmnibar({type: "SearchEngine", extra:"k"});
        });
 // ----- Weblio ----------------------------------------------------------------
 addSearchAliasX('wb',
