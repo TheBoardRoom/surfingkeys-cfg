@@ -16,6 +16,17 @@ removeSearchAliasX('b'); // baidu
 // Search engine
 // ##### Other #################################################################
 // ***** Dictionary ************************************************************
+// ----- E-words --------------------------------------------------------------
+addSearchAliasX('e',
+                'E-words',
+                'http://e-words.jp/w/',
+                's'
+                );
+mapkey('oe',
+       '#8Open search with E-words',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"e"});
+       });
 // ----- Kotobank --------------------------------------------------------------
 addSearchAliasX('k',
                 'Kotobank',
