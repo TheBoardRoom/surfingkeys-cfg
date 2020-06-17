@@ -19,7 +19,7 @@ removeSearchAliasX('b'); // baidu
 // ----- E-words --------------------------------------------------------------
 addSearchAliasX('e',
                 'E-words',
-                'http://e-words.jp/w/',
+                'http://e-words.jp/?q=',
                 's'
                 );
 mapkey('oe',
