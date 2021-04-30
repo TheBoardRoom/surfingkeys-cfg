@@ -7,6 +7,8 @@ unmap('ow');
 unmap('oe');
 unmap('ob');
 unmap('oi');
+unmap('od');
+removeSearchAliasX('d'); // duckduckgo
 removeSearchAliasX('g'); // google
 removeSearchAliasX('w'); // bing
 removeSearchAliasX('e'); // wiki
@@ -61,6 +63,28 @@ mapkey('oj',
            Front.openOmnibar({type: "SearchEngine", extra:"j"});
        });
 // ***** Other *****************************************************************
+// ----- Odysee ----------------------------------------------------------------
+addSearchAliasX('dc',
+                'Odysee',
+                'https://odysee.com/$/search?q=',
+                's'
+                );
+mapkey('odc',
+       '#8Open search with Odysee',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"dc"});
+       });
+// ----- Duckduckgo ------------------------------------------------------------
+addSearchAliasX('dg',
+                'Duckduckgo',
+                'https://duckduckgo.com/?q=',
+                's'
+                );
+mapkey('odg',
+       '#8Open search with Duckduckgo',
+       function() {
+           Front.openOmnibar({type: "SearchEngine", extra:"dg"});
+       });
 // ----- IMDB ------------------------------------------------------------------
 addSearchAliasX('i',
                 'IMDB',
