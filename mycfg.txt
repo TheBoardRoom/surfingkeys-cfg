@@ -2,12 +2,12 @@
 // unmap('<Ctrl-i>');
 
 // Remove search alias for google and bing
-unmap('og');
+/*unmap('og');
 unmap('ow');
 unmap('oe');
 unmap('ob');
 unmap('oi');
-unmap('od');
+unmap('od');*/
 removeSearchAliasX('d'); // duckduckgo
 removeSearchAliasX('g'); // google
 removeSearchAliasX('w'); // bing
