@@ -7,12 +7,12 @@ unmap('ow');
 unmap('oe');
 unmap('ob');
 unmap('oi');
-unmap('od');*/
+unmap('od');
 removeSearchAliasX('d'); // duckduckgo
 removeSearchAliasX('g'); // google
 removeSearchAliasX('w'); // bing
 removeSearchAliasX('e'); // wiki
-removeSearchAliasX('b'); // baidu
+removeSearchAliasX('b'); // baidu*/
 
 
 // Search engine
